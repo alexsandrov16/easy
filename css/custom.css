@@ -1,0 +1,35 @@
+footer{
+    padding: .5em 0 !important;
+}
+
+
+
+
+/*
+Mediaquery
+---------------------------------------------------------------------------------------------
+|Dispositivo       |Extra Pequeño  |Pequeña      |Medio        |Largo        |Extra grande|
+|Punto de ruptura  |<576 px        |≥576 px      |≥768 px      |≥992 px      |≥1200 px    |
+|vista             |100 %          |540 píxeles  |720 píxeles  |960 píxeles  |1140 píxeles|
+---------------------------------------------------------------------------------------------
+*/
+/*Extra Pequeño*/
+@media screen and (min-width: 576px) {
+    
+}
+/*Pequeña*/
+@media screen and (max-width: 576px) {
+    
+}
+/*Medio*/
+@media screen and (max-width: 768px) {
+    
+}
+/*Largo*/
+@media screen and (max-width: 992px) {
+    
+}
+/*Extra grande*/
+@media screen and (max-width: 1200px) {
+    
+}
