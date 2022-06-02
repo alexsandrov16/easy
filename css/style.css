@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+:root{
+    --bg-primary:#eee;
+    --bg-secondary:#eee;
+    --color-primary:#eee;
+    --colo-secondary:#eee;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125em;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    padding: 1.5em 1em;
+    text-align: center;
+    font-weight: 600;
+}
+
+header {
+    max-height: 25em;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.title {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: .5em 0;
+}
+
+h4.subtitle {
+    font-weight: 300;
+    font-size: 1.55em;
+    margin-bottom: 1.75em;
+}
+
+a.btn,button.btn{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .25em;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+a.btn.large,button.btn.large{
+    width: 100%;
+}
+
+.container{
+    padding: 0 1em;
+}
+.grid{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+}
+
+article{
+    /*border: 1px solid #d1d1d1;*/
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 10px 0px #aaa;
+    padding: 1em;
+}
+
+
+/**
+| > 576px & < 767px teléfonos móviles en modo horizontal.
+| > 768px & < 991px tabletas.
+| > 992px & < 1199px pantallas de escritorio normales.
+| > 1200px pantallas grandes como televisores.
+*/
