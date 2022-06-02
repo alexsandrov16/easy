@@ -1,8 +1,34 @@
-footer{
+:root{
+    
+}
+footer {
     padding: .5em 0 !important;
 }
 
+header {
+    background: linear-gradient(#4ddae3, #f5eaa1) !important;
+}
 
+.grid{
+    grid-row-gap: 1.25em !important;
+}
+
+
+
+
+
+/*
+aside {
+    height: 100vh;
+    padding: 1em;
+    position: fixed;
+    background: red;
+}
+
+
+span icon {
+    cursor: pointer;
+}*/
 
 
 /*
@@ -14,22 +40,16 @@ Mediaquery
 ---------------------------------------------------------------------------------------------
 */
 /*Extra Pequeño*/
-@media screen and (min-width: 576px) {
-    
-}
+@media screen and (min-width: 576px) {}
+
 /*Pequeña*/
-@media screen and (max-width: 576px) {
-    
-}
+@media screen and (max-width: 576px) {}
+
 /*Medio*/
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}
+
 /*Largo*/
-@media screen and (max-width: 992px) {
-    
-}
+@media screen and (max-width: 992px) {}
+
 /*Extra grande*/
-@media screen and (max-width: 1200px) {
-    
-}
+@media screen and (max-width: 1200px) {}
