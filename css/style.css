@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-:root{
-    --bg-primary:#eee;
-    --bg-secondary:#eee;
-    --color-primary:#eee;
-    --colo-secondary:#eee;
+:root {
+    --bg-primary: #eee;
+    --bg-secondary: #eee;
+    --color-primary: #eee;
+    --colo-secondary: #eee;
 }
 
 *,
@@ -34,30 +34,27 @@ main {
 footer {
     padding: 1.5em 1em;
     text-align: center;
-    font-weight: 600;
+    font-size: 0.75em;
 }
 
 header {
-    max-height: 25em;
     background: #333;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1.title {
-    font-size: 2.5em;
+header h1 {
     font-weight: 400;
-    margin: .5em 0;
 }
 
-h4.subtitle {
+header h4 {
     font-weight: 300;
-    font-size: 1.55em;
-    margin-bottom: 1.75em;
 }
 
-a.btn,button.btn{
+/***Button***/
+a.btn,
+button.btn {
     display: inline-block;
     padding: .75em 1.5em;
     background-color: red;
@@ -67,33 +64,147 @@ a.btn,button.btn{
     border-radius: .25em;
     font-size: 1em;
     margin-bottom: 2em;
+    transition: all .5s;
 }
-a.btn.large,button.btn.large{
+
+a.btn.large,
+button.btn.large {
     width: 100%;
 }
 
-.container{
-    padding: 0 1em;
-}
-.grid{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
+a.btn:hover,
+button.btn:hover {
+    background-color: rgb(250, 105, 105);
 }
 
-article{
-    /*border: 1px solid #d1d1d1;*/
+/***Container***/
+.container {
+    padding: 0 1em;
+}
+
+/***Grid System***/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+/***Card***/
+article {
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 0.25em;
-    box-shadow: 1px 1px 10px 0px #aaa;
+    /*box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, .35);*/
     padding: 1em;
 }
 
+/***Typographic***/
+h1 {
+    font-size: 2.5em;
+    margin: .8em 0;
+}
 
-/**
-| > 576px & < 767px teléfonos móviles en modo horizontal.
-| > 768px & < 991px tabletas.
-| > 992px & < 1199px pantallas de escritorio normales.
-| > 1200px pantallas grandes como televisores.
-*/
+h2 {
+    font-size: 2.25em;
+    margin: .75em 0;
+}
+
+h3 {
+    font-size: 2em;
+    margin: .6em 0;
+}
+
+h4 {
+    font-size: 1.75em;
+    margin: .55em 0;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin: .4em 0;
+}
+
+h6 {
+    font-size: 1.25em;
+    margin: .35em 0;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+/***Nav***/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-height: 3.125em;
+    padding-top: .625em !important;
+    padding-bottom: .625em !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+/***MediaQuery***/
+@media (min-width: 600px) {
+    .container {
+        padding: 0 1.5em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 0 2em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-size: 3.125em;
+        margin: 1em 0;
+    }
+
+    h2 {
+        font-size: 2.75em;
+        margin: .9em 0;
+    }
+
+    h3 {
+        font-size: 2.375em;
+        margin: .8em 0;
+    }
+
+    h4 {
+        font-size: 2em;
+        margin: .6em 0;
+    }
+
+    h5 {
+        font-size: 1.625em;
+        margin: .5em 0;
+    }
+
+    h6 {
+        font-size: 1.25em;
+        margin: .4em 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 6em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        padding: 0 15em;
+    }
+}
