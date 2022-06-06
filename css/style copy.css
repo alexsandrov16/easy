@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --btn-bg-primary:rgb(149, 75, 224);
-    --btn-bg-secondary:rgb(101, 90, 163);
+    --btn-bg-primary:#ef4b45;
+    --btn-bg-secondary:#3443;
     --btn-color:#fff;
     /*--btn-color:#3443;*/
 }
@@ -89,10 +89,6 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    transition: all .6s;
-}
-.btn:hover{
-    background: var(--btn-bg-secondary);
 }
 
 /*Container*/

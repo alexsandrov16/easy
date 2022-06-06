@@ -1,55 +1,107 @@
-:root{
-    
-}
-footer {
-    padding: .5em 0 !important;
+.title {
+    margin: 0 0 1.5rem 0;
+    font-weight: 400;
 }
 
-header {
-    background: linear-gradient(#4ddae3, #f5eaa1) !important;
-}
-
-.grid{
-    grid-row-gap: 1.25em !important;
+.subtitle {
+    font-weight: 300;
+    margin: .5rem 0 2.5rem 0;
 }
 
 
+.wrapper {
+    display: flex;
+    flex-flow: wrap;
+}
 
-
-
-/*
-aside {
+.content {
+    width: 100%;
     height: 100vh;
-    padding: 1em;
-    position: fixed;
-    background: red;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+
+.wrapper .bg {
+    display: none;
+    height: 100vh;
+    width: 50%;
+    background: rebeccapurple;
 }
 
 
-span icon {
-    cursor: pointer;
-}*/
+
+
+
+@media (min-width: 900px) {
+    .content{
+        width: 50%;
+        padding: 0 2rem ;
+    }
+    .wrapper .bg{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*:root {}
+
+.title{
+    font-size: 4rem;
+}
+.title,
+.subtitle{font-weight: 300;margin: 1rem 0;text-align: center;}
+nav>span>icon {cursor: pointer;}
+nav>a{text-decoration: none;}
+
+
+
+
+
+
+
 
 
 /*
-Mediaquery
----------------------------------------------------------------------------------------------
-|Dispositivo       |Extra Pequeño  |Pequeña      |Medio        |Largo        |Extra grande|
-|Punto de ruptura  |<576 px        |≥576 px      |≥768 px      |≥992 px      |≥1200 px    |
-|vista             |100 %          |540 píxeles  |720 píxeles  |960 píxeles  |1140 píxeles|
----------------------------------------------------------------------------------------------
-*/
-/*Extra Pequeño*/
-@media screen and (min-width: 576px) {}
 
-/*Pequeña*/
-@media screen and (max-width: 576px) {}
 
-/*Medio*/
-@media screen and (max-width: 768px) {}
 
-/*Largo*/
-@media screen and (max-width: 992px) {}
 
-/*Extra grande*/
-@media screen and (max-width: 1200px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#u-1 {
+    background-image: url(../img/usgs-An18-liwqIw-unsplash.jpg) !important;
+}
+
+#u-2 {}
+
+#u-3 {}
+
+#u-4 {}
+
+a>article {
+    text-decoration: none;
+}*/
