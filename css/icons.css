@@ -6,7 +6,7 @@
     src: url(../font/Material_Icons_Round.woff2) format('woff2');
 }
 
-icon {
+material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;

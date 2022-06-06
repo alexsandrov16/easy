@@ -1,55 +1,43 @@
-:root{
-    
-}
-footer {
-    padding: .5em 0 !important;
-}
-
-header {
-    background: linear-gradient(#4ddae3, #f5eaa1) !important;
-}
-
-.grid{
-    grid-row-gap: 1.25em !important;
-}
-
-
-
-
-
-/*
-aside {
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    padding: 1em;
-    position: fixed;
-    background: red;
+    background: url(../img/bg.png);
 }
 
 
-span icon {
-    cursor: pointer;
-}*/
 
 
-/*
-Mediaquery
----------------------------------------------------------------------------------------------
-|Dispositivo       |Extra Pequeño  |Pequeña      |Medio        |Largo        |Extra grande|
-|Punto de ruptura  |<576 px        |≥576 px      |≥768 px      |≥992 px      |≥1200 px    |
-|vista             |100 %          |540 píxeles  |720 píxeles  |960 píxeles  |1140 píxeles|
----------------------------------------------------------------------------------------------
+
+/**
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 */
-/*Extra Pequeño*/
-@media screen and (min-width: 576px) {}
+/*// X - Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    img#default{width: 250px;}
+    h2.title{margin-bottom: .83rem;}
+ }
 
-/*Pequeña*/
-@media screen and (max-width: 576px) {}
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    img#default{width: 250px;}
+    h2.title{margin-bottom: .83rem;}
+ }
 
-/*Medio*/
-@media screen and (max-width: 768px) {}
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    img#default{width: 275px;}
+}
 
-/*Largo*/
-@media screen and (max-width: 992px) {}
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    img#default{width: 350px;}
+}
 
-/*Extra grande*/
-@media screen and (max-width: 1200px) {}
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
