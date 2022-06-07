@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy</title>
-    <link rel="stylesheet" href="css/pico.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <center class="container">
-            <img src="img/default.png" alt="" id="default">
-            <br><br>
-            <h2 class="title">Geography Quiz</h2>
-            <h4>¡Veamos cuánta atención prestaste en la clase de geografía! </h4>
+        <div class="step1">
+            <center>
+                    <img src="img/default.png" alt="" class="img">
 
-            <a href="#" role="button" id="start">Comenzar</a>
-        </center>
+                <h1 style="margin-bottom:1rem;">Geography Quiz</h1>
+                <h4 style="margin-bottom:2rem;font-weight:300;">¡Veamos cuánta atención prestaste en la clase de geografía! </h4>
+
+                <a role="button" onclick="activ()">Comenzar</a>
+            </center>
+        </div>
+        <div class="step2" hidden>
+            <h2>Hola ¿Como te llamas?</h2>
+            <p>Escribe a continuación tu nombre</p>
+            <input type="text">
+            <button role="button">Continuar</button>
+        </div>
     </main>
 
-    <dialog>
-
-        <article>
-            <strong>¿Como te llamas?</strong>
-            <input type="text" name="" id="" placeholder="Escribe aquí tu nombre...">
-            <footer>
-                <a id="cancel" href="#cancel" role="button" class="secondary">Cancelar</a>
-                <a id="confirm" href="#confirm" role="button">Confirmar</a>
-            </footer>
-        </article>
-    </dialog>
-
-    <script src="js/app.js"></script>
     <script>
-        let app = new Modal({
-            'url': 'http://localhost/easy/quiz.html',
-        });
-        app.open(document.querySelector('a#start'));
+        function activ() {
+            document.querySelector('.step1').classList.add('showOut');
+            document.querySelector('.step2').classList.add('showIn');
+            document.querySelector('.step1').setAttribute('hidden', '');
+            document.querySelector('.step2').removeAttribute('hidden');
+        }
     </script>
 </body>
 
