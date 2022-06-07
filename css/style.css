@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+    background: url(../img/bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.img {
+    width: 250px;
+    padding-bottom: 2rem;
+}
+
+/*Button*/
+[role="button"] {
+    display: inline-block;
+    padding: .75rem 2rem;
+    margin-bottom: 2em;
+    background-color: #1a73e8;
+    color: #fff !important;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: all ease-in-out .4s;
+}
+
+[role="button"]:hover {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    background-color: #185abc;
+    color: #fff !important;
+}
+
+/*Animation*/
+.showIn {
+    animation: 600ms showIn;
+}
+
+@keyframes showIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+.showOut {
+    animation: 800ms showOut;
+}
+
+@keyframes showOut {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/*Input*/
+input{
+    display: block;
+    margin-bottom: 1.5em;
+    width: 100%;
+    
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    input{
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    main {
+        width: 70%;
+    }
+
+    .img {
+        width: 300px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    main {
+        width: 60%;
+    }
+
+    .img {
+        width: 350px;
+    }
+    input{
+        width: 60%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    main {
+        width: 45%;
+    }
+
+    .img {
+        width: 380px;
+    }
+    input{
+        width: 50%;
+    }
+}
