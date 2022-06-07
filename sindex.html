@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy</title>
+    <link rel="stylesheet" href="css/pico.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/icons.css">
+</head>
+
+<body>
+    <main>
+        <center class="container">
+            <img src="img/default.png" alt="" id="default">
+            <br><br>
+            <h2 class="title">Geography Quiz</h2>
+            <h4>¡Veamos cuánta atención prestaste en la clase de geografía! </h4>
+
+            <a href="#" role="button" id="start">Comenzar</a>
+        </center>
+    </main>
+
+    <dialog>
+
+        <article>
+            <strong>¿Como te llamas?</strong>
+            <input type="text" name="" id="" placeholder="Escribe aquí tu nombre...">
+            <footer>
+                <a id="cancel" href="#cancel" role="button" class="secondary">Cancelar</a>
+                <a id="confirm" href="#confirm" role="button">Confirmar</a>
+            </footer>
+        </article>
+    </dialog>
+
+    <script src="js/app.js"></script>
+    <script>
+        let app = new Modal({
+            'url': 'http://localhost/easy/quiz.html',
+        });
+        app.open(document.querySelector('a#start'));
+    </script>
+</body>
+
+</html>
