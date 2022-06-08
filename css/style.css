@@ -69,10 +69,10 @@ input,select{
     outline: none;
     transition: all .25s;
 }
-input:hover{
+input:hover,select:hover{
     border: 2px solid #bbbbbb;
 }
-input:focus{
+input:focus,select:focus{
     border: 2px solid #2257ff;
 }
 
