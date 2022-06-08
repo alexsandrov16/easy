@@ -58,7 +58,7 @@ p {
 }
 
 /*Input*/
-input{
+input,select{
     display: block;
     width: 100%;
     height: 45px;
@@ -75,6 +75,17 @@ input:hover{
 input:focus{
     border: 2px solid #2257ff;
 }
+
+/*Flex ul*/
+ul{
+    /*display: flex;
+    flex-flow: row wrap;*/
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
 

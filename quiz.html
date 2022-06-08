@@ -6,48 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy</title>
-    <link rel="stylesheet" href="css/pico.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <div class="container">
-            <div class="grid">
-                <div class="column">
-                    <p>Hey! 👋 bienvenido <b></b>, escoge sobre que tmatica quisieras comprobar tus conocimientos...
-                    </p>
-                </div>
-                <div class="column">
-                    <ul>                   
-
-                        <li>4.1 El clima. Interacción con los componentes naturales y económicos sociales
-                            <ol>
-                                <li>4.1.1 Factores que modifican las condiciones climáticas: latitud, masas de aire, masas de agua,
-                                    altitud y relieve</li>
-                            </ol>
-                        </li>
-                        <li>4.2 Condiciones atmosféricas que conforman el clima: temperatura, presión, vientos, humedad y
-                            precipitaciones</li>
-                        <li>4.3 Las zonas climáticas: zona cálida, templada y fría</li>
-                        <li>4.4 Clasificaciones de los tipos de clima. El sistema de clasificación según Köppen.
-                            <ol>
-                                <li>4.4.1 Climas de la zona tropical. Características
-
-                    4.4.2 Cuba en la zona tropical. Características de su clima</li>
-                                <li>4.4.1 Climas de la zona tropical. Características
-
-                    4.4.2 Cuba en la zona tropical. Características de su clima</li>
-                            </ol>
-                        </li>
-                        <li>4.5 El cambio climático una problemática actual</li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
+        <h3>👋 ¡Bienvenido <span id="user"></span>!</h3>
+        <p>
+            Dinos con cual temática de la unidad 4 te gustaría empezar.
+        </p>
+        <select name="" id="">
+            <option>Seleccione </option>
+            <optgroup>4.1</optgroup>
+            <option value="">El clima. Interacción con los componentes naturales y económicos sociales</option>
+            <option value="">Factores que modifican las condiciones climáticas: latitud, masas de aire, masas de agua,
+                altitud y relieve</option>
+            <optgroup>4.2</optgroup>
+            <option value="">Condiciones atmosféricas que conforman el clima: temperatura, presión, vientos, humedad y
+                precipitaciones</option>
+            <optgroup>4.3</optgroup>
+            <option value="">Las zonas climáticas: zona cálida, templada y fría</option>
+            <optgroup>4.4</optgroup>
+            <option value="">Clasificaciones de los tipos de clima. El sistema de clasificación según Köppen.</option>
+            <option value="">Climas de la zona tropical. Características</option>
+            <option value="">Cuba en la zona tropical. Características de su clima</option>
+            <option value="">Climas de la zona tropical. Características</option>
+            <optgroup>4.5</optgroup>
+            <option value="">El cambio climático una problemática actual</option>
+        </select>
+        <button role="button" onclick="">comenzar</button>
     </main>
+
+    <script>
+        document.getElementById('user').innerText = window.localStorage.getItem('user');
+    </script>
 </body>
 
 </html>
