@@ -8,34 +8,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reboot.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            if (window.localStorage.getItem('user')) {
+                window.location.href = 'http://localhost/easy/quiz.html';
+            }
+        });
+    </script>
 </head>
 
 <body>
     <main>
         <div class="step1">
             <center>
-                    <img src="img/default.png" alt="" class="img">
+                <img src="img/default.png" alt="" class="img">
 
                 <h1 style="margin-bottom:1rem;">Geography Quiz</h1>
-                <h4 style="margin-bottom:2rem;font-weight:300;">¡Veamos cuánta atención prestaste en la clase de geografía! </h4>
+                <h4 style="margin-bottom:2rem;font-weight:300;">¡Veamos cuánta atención prestaste en la clase de
+                    geografía! </h4>
 
-                <a role="button" onclick="activ()">Comenzar</a>
+                <a role="button" onclick="starOne()">Comenzar</a>
             </center>
         </div>
         <div class="step2" hidden>
             <h2>Hola ¿Como te llamas?</h2>
             <p>Escribe a continuación tu nombre</p>
             <input type="text">
-            <button role="button">Continuar</button>
+            <button role="button" onclick="saveName()">Continuar</button>
         </div>
     </main>
 
     <script>
-        function activ() {
-            document.querySelector('.step1').classList.add('showOut');
-            document.querySelector('.step2').classList.add('showIn');
-            document.querySelector('.step1').setAttribute('hidden', '');
-            document.querySelector('.step2').removeAttribute('hidden');
+        function starOne() {
+            let one = document.querySelector('.step1');
+            let two = document.querySelector('.step2');
+
+            one.setAttribute('hidden', '');
+            two.classList.add('showIn');
+            two.removeAttribute('hidden');
+        }
+
+        function saveName() {
+            let i = document.querySelector('input');
+
+            if (i.value == '') {
+                i.style.borderColor = '#dc3545';
+            } else{
+                window.localStorage.setItem('user', i.value);
+                window.location.href = 'http://localhost/easy/quiz.html';
+            }
         }
     </script>
 </body>
